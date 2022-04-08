@@ -1,17 +1,13 @@
-amenities = {};
+let amenities = {};
 $( document ).ready(function() {
     $('input').change(function() {
+      let amenityId  = $(this).data('id');
+      let amenityName = $(this).attr('data-name');
         if ($(this).is(':checked')) {
-          var amenityId  = $(this).attr('data-id');
-          var amenityName = $(this).attr('data-name');
-          amenities[amenityName] = amenityId;
-          console.log(amenities);
-          $('h4#dict').text(amenities);
+          amenities[amenityId] = ' ' + amenityName;
         } else {
-            delete amenities.AmenityName;
-            console.log(amenities)
-            $('h4#dict').text(amenities);
+            delete amenities[$(this).data('id')];
         }
+        $('h4#dict').text(Object.values(amenities));
       });
 });
-
