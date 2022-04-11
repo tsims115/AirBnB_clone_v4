@@ -23,6 +23,7 @@ button:hover {
 }
 .filters div {
     display: inline-grid;
+
 }
 .filters h2 {
     margin-left: 15%;
@@ -49,6 +50,9 @@ button:hover {
 .amenities {
     height: 100%;
     width: 25%;
+    display: inline-block;
+    margin-bottom: 200px;
+
 }
 
 .popover {
@@ -103,6 +107,7 @@ button:hover {
 }
 
 h4#dict {
-    text-overflow: ellipsis;
     white-space: nowrap;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
 }
