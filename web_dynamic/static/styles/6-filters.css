@@ -110,4 +110,5 @@ h4#dict {
     white-space: nowrap;
     overflow-x: hidden;
     text-overflow: ellipsis;
+    height: 17px;
 }
