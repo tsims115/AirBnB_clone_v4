@@ -2,7 +2,7 @@ $( document ).ready(function() {
   amenities = {};
 
   $(function () {
-    $.get('https://swapi-api.hbtn.io/api/people/5/?format=json', function (data, status) {
+    $.get('http://0.0.0.0:5001/api/v1/status/', function (data, status) {
 
       if (status === 'success') {
         $('#api_status').addClass('available');
